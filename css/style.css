@@ -1,0 +1,143 @@
+body {
+  background: rgb(45,3,3);
+  background: linear-gradient(180deg, #99a5ff 0%, #BE99FF 100%);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.konkurs_napis {
+  position: fixed;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.konkurs_napis img {
+  width: 85%;
+  height: auto;
+  animation: text 20s infinite linear;
+}
+
+.header {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.pog {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.pausechamp {
+  color: #c5fdcf;
+  font-size: 52px;
+  font-weight: 900;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-line{
+  width: 1350px;
+  height: 65px;
+  background-color: #FDC9F9;
+  border-radius: 40px;
+  margin-bottom: 150px;
+  z-index: 1;
+}
+
+#countdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  z-index: 2;
+}
+
+#countdown div {
+  background-color: #FDC9F9;
+  border-radius: 40px;
+  color: rgba(109, 60, 105, 0.5);
+  font-size: 100px;
+  font-weight: 900;
+  margin: 0 25px;
+  padding: 20px 0 20px;
+  text-align: center;
+  width: 300px;
+  height: 180px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  animation: blinker 1s linear infinite, box-shadow-blinker 1s linear infinite;
+  z-index: 2;
+}
+
+#countdown div span {
+  display: block;
+  font-size: 28px;
+  margin-top: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  #countdown div {
+      font-size: 8vw;
+      padding: 5px 0 5px;
+      margin: 0 10px;
+      width: 40%;
+      max-width: none;
+      margin-bottom: 15px;
+  }
+
+  #countdown div span {
+      font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+.emote1{
+  opacity: 0;
+}
+}
+
+.osci{
+  font-size: 15px;
+}
+
+.osci a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+}
+
+.osci a:hover {
+  color: #b582b1;
+}
+
+.button{
+display: inline-block;
+outline: none;
+cursor: pointer;
+font-size: 16px;
+line-height: 20px;
+font-weight: 600;
+border-radius: 8px;
+padding: 14px 24px;
+border: none;
+transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+color: #fff;
+}
+
