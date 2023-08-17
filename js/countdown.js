@@ -27,8 +27,7 @@ const countdown = () => {
   } else {
     clearInterval(intervalId);
     countdownElement.innerHTML = `
-      <p class="pausechamp">I PO CO TO ROBISZ</p>
-      <img src="stare.png">`;
+    <a href="https://youtu.be/xm8tfR18IQs" class="guziczek">Wszystkiego Najlepszego!</a>`;
     bottomLineElement.style.display = "none"; // Ukryj element
   }
 };
